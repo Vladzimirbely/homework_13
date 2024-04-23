@@ -1,4 +1,4 @@
-<h1>Tests for automated testing of the <i style="color:#f22213">rabota.by</i> website</h1>
+<h1>Tests for automated testing of the <i>rabota.by</i> website</h1>
 
 ---
 
@@ -37,11 +37,11 @@
 
 <h2 id="tests"><img width="40" align="center" src="img/tests.png"> Tests</h2>
 <div>
-    <input type="checkbox" checked> Search login
-    <p><input type="checkbox" checked> Type text in input</p>
-    <p><input type="checkbox" checked> Click signup</p>
-    <p><input type="checkbox" checked> Click filter</p>
-    <p><input type="checkbox" checked> Click search employees button</p>
+    <p><img width="20" align="center" src="img/checkbox.png" alt="checkbox"> Search login</p>
+    <p><img width="20" align="center" src="img/checkbox.png" alt="checkbox">Type text in input</p>
+    <p><img width="20" align="center" src="img/checkbox.png" alt="checkbox"> Click signup</p>
+    <p><img width="20" align="center" src="img/checkbox.png" alt="checkbox"> Click filter</p>
+    <p><img width="20" align="center" src="img/checkbox.png" alt="checkbox"> Click search employees button</p>
 </div>
 
 ---
@@ -54,7 +54,7 @@
     pip install -r requirements.txt
     pytest . --browser_version=${BROWSER_VERSION}
 </pre>
-<p style="color:#0cf5ab">Parameters: 
+<p><b>Parameters</b>: 
     <li>BROWSER_VERSION - browser version in which the tests will be run</li>
 </p>
 
