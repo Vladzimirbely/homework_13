@@ -1,4 +1,4 @@
-<h1>Tests for automated testing of the <font color="#e63f39">rabota.by</font> website</h1>
+<h1>Tests for automated testing of the <i style="color:#f22213">rabota.by</i> website</h1>
 
 ---
 
@@ -7,11 +7,11 @@
 </p>
 
 <h2><img width="40" align="center" src="img/description.png"> Description</h2>
-* [Tools](#tools)
-* [Tests](#tests)
-* [Run tests](#run-tests)
-* [Example of passing test](#test-example)
-* [Telegram notifications](#telegram-notification)
+<li><a href="#tools">Tools</a></li>
+<li><a href="#tests">Tests</a></li>
+<li><a href="#run-tests">Run tests</a></li>
+<li><a href="#test-example">Example of passing test</a></li>
+<li><a href="#telegram-notification">Telegram notifications</a></li>
 
 ---
 
@@ -36,22 +36,25 @@
 ---
 
 <h2 id="tests"><img width="40" align="center" src="img/tests.png"> Tests</h2>
--[x] Search login
--[x] Type text in input
--[x] Click signup
--[x] Click filter
--[x] Click search employees button
+<div style="display:block">
+    <p><input type="checkbox" checked> Search login</p>
+    <p><input type="checkbox" checked> Type text in input</p>
+    <p><input type="checkbox" checked> Click signup</p>
+    <p><input type="checkbox" checked> Click filter</p>
+    <p><input type="checkbox" checked> Click search employees button</p>
+</div>
 
 ---
 
 <h2 id="run-tests"><img width="40" align="center" src="img/run-tests.png" alt="run"> Run tests</h2>
-```
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-pytest . --browser_version=${BROWSER_VERSION}
-```
-<p><font color="#0cf5ab">Parameters</font>: 
+
+<pre>
+    python -m venv .venv
+    source .venv/bin/activate
+    pip install -r requirements.txt
+    pytest . --browser_version=${BROWSER_VERSION}
+</pre>
+<p><i style="color:#0cf5ab">Parameters</i>: 
     <li>BROWSER_VERSION - browser version in which the tests will be run</li>
 </p>
 
