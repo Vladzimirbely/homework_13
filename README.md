@@ -37,7 +37,7 @@
 
 <h2 id="tests"><img width="40" align="center" src="img/tests.png"> Tests</h2>
 
-<p><input type="checkbox" checked> Search login</p>
+<p><img width="20" align="center" src="img/checkbox.png" alt="checkbox"> Search login</p>
 <p><img width="20" align="center" src="img/checkbox.png" alt="checkbox"> Type text in input</p>
 <p><img width="20" align="center" src="img/checkbox.png" alt="checkbox"> Click signup</p>
 <p><img width="20" align="center" src="img/checkbox.png" alt="checkbox"> Click filter</p>
