@@ -36,8 +36,8 @@
 ---
 
 <h2 id="tests"><img width="40" align="center" src="img/tests.png"> Tests</h2>
-<div style="display:block">
-    <p><input type="checkbox" checked> Search login</p>
+<div>
+    <input type="checkbox" checked> Search login
     <p><input type="checkbox" checked> Type text in input</p>
     <p><input type="checkbox" checked> Click signup</p>
     <p><input type="checkbox" checked> Click filter</p>
@@ -54,7 +54,7 @@
     pip install -r requirements.txt
     pytest . --browser_version=${BROWSER_VERSION}
 </pre>
-<p><i style="color:#0cf5ab">Parameters</i>: 
+<p style="color:#0cf5ab">Parameters: 
     <li>BROWSER_VERSION - browser version in which the tests will be run</li>
 </p>
 
