@@ -3,7 +3,7 @@
 ---
 
 <p align="center">
-    <img width="200" height="200" src="https://play-lh.googleusercontent.com/iYWR8J-HPzK25sMPX47nZym47CsNBZT1sK53YQ0fhDZX-gAQteHgTgH_i90sALdkWA">
+    <img width="200" height="200" src="img/logo.jpg">
 </p>
 
 <h2><img width="40" align="center" src="img/description.png"> Description</h2>
@@ -37,11 +37,11 @@
 
 <h2 id="tests"><img width="40" align="center" src="img/tests.png"> Tests</h2>
 
-<p><img width="20" align="center" src="img/checkbox.png" alt="checkbox"> Search login</p>
-<p><img width="20" align="center" src="img/checkbox.png" alt="checkbox"> Type text in input</p>
-<p><img width="20" align="center" src="img/checkbox.png" alt="checkbox"> Click signup</p>
-<p><img width="20" align="center" src="img/checkbox.png" alt="checkbox"> Click filter</p>
-<p><img width="20" align="center" src="img/checkbox.png" alt="checkbox"> Click search employees button</p>
+<p><img width="20" align="center" src="img/checkbox.png" alt="checkbox"> Search company</p>
+<p><img width="20" align="center" src="img/checkbox.png" alt="checkbox"> Search with advanced filters</p>
+<p><img width="20" align="center" src="img/checkbox.png" alt="checkbox"> Open CV page</p>
+<p><img width="20" align="center" src="img/checkbox.png" alt="checkbox"> Save searching</p>
+<p><img width="20" align="center" src="img/checkbox.png" alt="checkbox"> Choose city</p>
 
 
 ---
@@ -70,7 +70,7 @@
 
 ---
 
-<h2 id="test-example"><img width="40" align="center" src="img/example.png" alt="exapmle">Example of passing employee search test</h2>
+<h2 id="test-example"><img width="40" align="center" src="img/example.png" alt="exapmle">Example of passing search of company test</h2>
 <img src="img/test-example.gif" alt="test">
 
 ---
