@@ -1,5 +1,3 @@
-from selene import browser, have
-
 from data.data_company import DataCompany, DataSearchWithFilter
 from pages.search_page import SearchPage
 
@@ -29,3 +27,8 @@ def test_advanced_search():
     search_page.open()
     search_page.search_with_filters(data)
     search_page.should_have_search_with_filters(data)
+
+def test_open_resume_page():
+    search_page = SearchPage()
+    search_page.open()
+    search_page.search_resume_page()

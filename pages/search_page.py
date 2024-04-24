@@ -1,4 +1,4 @@
-from selene import browser, have
+from selene import browser, have, command, be
 
 class SearchPage:
     def open(self):
@@ -34,3 +34,10 @@ class SearchPage:
     def should_have_search_with_filters(self, data):
         browser.element('[data-qa="search-input"]').should(have.value(data.python))
         browser.element('[data-qa="bloko-header-3"]').should(have.text(data.python))
+
+    def search_resume_page(self):
+        browser.element('[data-qa="remote-item-desktop"]').perform(command.js.scroll_into_view).click()
+        browser.element('[data-qa="bloko-modal-close"]').click()
+        browser.element('[data-hh-tab-id="resumeSearch"]').click()
+        browser.element('[data-qa="bloko-custom-select-select"]').click()
+        browser.element('[data-qa="bloko-custom-select-option-list"]').should(be.visible)
