@@ -41,3 +41,13 @@ class SearchPage:
         browser.element('[data-hh-tab-id="resumeSearch"]').click()
         browser.element('[data-qa="bloko-custom-select-select"]').click()
         browser.element('[data-qa="bloko-custom-select-option-list"]').should(be.visible)
+
+    def save_search_without_registering(self):
+        browser.element('[data-qa="search-input"]').type('Python').press_enter()
+        browser.element('[data-qa="bloko-modal-close"]').click()
+        browser.element('[data-qa="vacancy-saved-search-create"]').click()
+
+    def should_have_text_registering(self):
+        browser.element('[data-qa="account-postponed-vacancy-saved-search"]').should(have.text(
+            'Войдите, чтобы сохранить поиск'
+        ))
