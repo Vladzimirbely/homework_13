@@ -19,7 +19,7 @@ def test_search_company():
 
 def test_advanced_search():
     data = DataSearchWithFilter(
-        python='Python'
+        python = 'Python'
     )
 
     search_page.open()
@@ -34,3 +34,8 @@ def test_save_search_without_registering():
     search_page.open()
     search_page.save_search_without_registering()
     search_page.should_have_text_registering()
+
+def test_choose_city():
+    search_page.open()
+    search_page.change_city()
+    search_page.should_be_city()

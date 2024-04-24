@@ -51,3 +51,14 @@ class SearchPage:
         browser.element('[data-qa="account-postponed-vacancy-saved-search"]').should(have.text(
             'Войдите, чтобы сохранить поиск'
         ))
+
+    def change_city(self):
+        browser.element('[data-qa="mainmenu_areaSwitcher"]').click()
+        browser.element('.area-switcher-cities li:nth-child(2) a').click()
+        browser.element('[data-qa="advanced-search"]').click()
+
+        browser.element('[data-qa="bloko-tag__text"]').perform(command.js.scroll_into_view).click()
+
+    def should_be_city(self):
+        browser.element('.supernova-navi-item_area-switcher-button').should(have.text('Брест'))
+        browser.element('[data-qa="bloko-tag__text"]').should(have.text('Брест'))
